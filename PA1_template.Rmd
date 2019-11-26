@@ -33,7 +33,7 @@ median(SumByDate$steps, na.rm = TRUE)
 ```
 
 Now we are ready to print a histogram using ggplot2-package:
-```{r plot 1}
+```{r plot1}
 c <- ggplot(SumByDate, aes(SumByDate$steps))
 c <- c + geom_histogram(color = "#FF99FF", 
                       fill = "#FFCCFF", 
@@ -109,7 +109,7 @@ MaxStepsInt
 
 Now we are ready to display this information as a time series plot of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis).
 
-```{r plot 2}
+```{r plot2}
 MaxStepsInt <- as.numeric(MaxStepsInt)
 c <- ggplot(AvgByInterval, aes(x = interval, y = steps))
 c <- c + geom_line(size = 1, color = "#00CCCC")
@@ -175,7 +175,7 @@ median(FSumByDate$steps)
 We can see, that the estimates increased (and somehow became equal).
 
 Now let's look on hystogram:
-```{r plot 3}
+```{r plot3}
 c <- ggplot(FSumByDate, aes(FSumByDate$steps))
 c <- c + geom_histogram(color = "#FF99FF", 
                       fill = "#FFCCFF", 
@@ -225,7 +225,7 @@ FAvgByIntWday <- summarise(FDataByIntWday, steps = mean(steps.x))
 ```
 
 Now we are ready to print a plot with two patterns - for weekdays and for weekends:
-```{r plot 4}
+```{r plot4}
 c <- ggplot(FAvgByIntWday, aes(x = interval, y = steps))
 c <- c + geom_line(size = 1, color = "#00CCCC")
 c <- c + facet_wrap(vars(wday), ncol = 1, nrow = 2) 

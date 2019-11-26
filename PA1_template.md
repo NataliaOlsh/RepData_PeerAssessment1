@@ -130,7 +130,7 @@ c <- c + theme(axis.text.x = element_text(color = c("black",
 plot(c)
 ```
 
-![](PA1_template_files/figure-html/plot 1-1.png)<!-- -->
+![](PA1_template_files/figure-html/plot1-1.png)<!-- -->
 
 
 ## What is the average daily activity pattern?
@@ -203,7 +203,7 @@ c <- c + theme(axis.text.x = element_text(color = c("black",
 plot(c)
 ```
 
-![](PA1_template_files/figure-html/plot 2-1.png)<!-- -->
+![](PA1_template_files/figure-html/plot2-1.png)<!-- -->
 
 
 
@@ -297,7 +297,7 @@ c <- c + theme(axis.text.x = element_text(color = c("black",
 plot(c)
 ```
 
-![](PA1_template_files/figure-html/plot 3-1.png)<!-- -->
+![](PA1_template_files/figure-html/plot3-1.png)<!-- -->
 
 
 ## Are there differences in activity patterns between weekdays and weekends?
@@ -352,4 +352,4 @@ c <- c + labs(title = "Activity patterns",
 plot(c)
 ```
 
-![](PA1_template_files/figure-html/plot 4-1.png)<!-- -->
+![](PA1_template_files/figure-html/plot4-1.png)<!-- -->
