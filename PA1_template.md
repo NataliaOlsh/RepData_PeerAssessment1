@@ -353,3 +353,5 @@ plot(c)
 ```
 
 ![](PA1_template_files/figure-html/plot4-1.png)<!-- -->
+
+We can see, that in general there are more active intervals on weekends, though maximum number of steps per interval is reached on a weekday. Also we can see that activity starts later in the morning on weekends.

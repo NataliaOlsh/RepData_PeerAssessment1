@@ -234,4 +234,6 @@ c <- c + labs(title = "Activity patterns",
               x = "5-minute interval"
            )
 plot(c)
-```
+``` 
+
+We can see, that in general there are more active intervals on weekends, though maximum number of steps per interval is reached on a weekday. Also we can see that activity starts later in the morning on weekends.
